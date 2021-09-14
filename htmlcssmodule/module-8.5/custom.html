@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom property</title>
+    <style>
+        :root{
+            --main-clour:slateblue;
+            --border-clour:black;
+            --background-clour:red;
+        }
+        h1{
+            color:var(--main-clour);
+        }
+        h2{
+            color: dodgerblue;
+        }
+        p{
+            color: dodgerblue;
+        }
+        footer{
+            color:(--background-clour);  
+        }
+        .sidenav,.blogs{
+            float: left;
+        }
+        aside{
+            background-color: forestgreen;
+            height: 500px;
+            width: 200px;
+        }
+        .blogs{
+            background-color: fuchsia;
+            width: calc(100%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit.</p>
+    </header>
+    <main>
+          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, optio!</h2>
+          <h6>Lorem ipsum dolor sit amet.</h6>
+          <section>
+              <aside class="sidenav">
+                  Lorem ipsum dolor sit amet.
+              </aside>
+              <div class="blogs">
+                  <h2>blogs</h2>
+              </div>
+          </section>
+    </main>
+    <div>
+        <footer>
+            <p>ddddd</p>
+        </footer>
+    </div>
+</body>
+</html>

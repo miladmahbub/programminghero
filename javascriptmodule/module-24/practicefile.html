@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="paragraph">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dignissimos culpa, sapiente quibusdam cum veritatis mollitia darchitecto distinctio consectetur voluptatem officiis reprehenderit eius delectus culpa repudiandae ullam quia. Iusto, unde doloribus! Ratione aliquid esse illum voluptatem praesentium laborum dolorum. Error ipsa expedita tempora quasi a?</p>
+        <p>dolorum minima provident perferendis illum dolorem delectus consequuntur ex maiores fuga corrupti! Excepturi maxime explicabo iure aut ipsa ab veniam nobis est perferendis expedita sit dicta ea voluptate quod recusandae consectetur, vitae odio? Ab, minima pariatur! Iure </p>
+        <p>electus quod dolorum eos sunt veniam. Modi qui fugiat, officiis reprehenderit perspiciatis voluptatibus harum dignissimos doloribus fugit illo! Magnam, officia itaque ad non eaque ut, similique temporibus animi </p>
+        <textarea name="" id="commentbox" cols="40" rows="10"></textarea><br>
+        
+        <button id="button">comment</button>
+        <script>
+                 document.getElementById('button').addEventListener('click',function(){
+                     const commentboxx = document.getElementById('commentbox');
+                     
+                    //  const usercomment =commentbox.value;
+                     const p = document.createElement('p');
+                     p.innerText = commentboxx.value;
+                     const commentbox = document.getElementById('commentbox');
+                     commentbox.appendChild =(p);
+
+
+                     
+
+                 })   
+        </script>
+    </div>
+</body>
+</html>

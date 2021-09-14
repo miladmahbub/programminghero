@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        .v{
+            color: darkblue;
+        }
+        h1{
+            color: aqua;
+        }
+        h1{
+            color: blue !important;
+        }
+        h1{
+            color: burlywood;
+        }
+        .vv{
+              color: darkgoldenrod;
+        }
+        #vvv{
+            color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="v">my heading number-1</h1>
+    <h1 class="v">my heading number-1</h1>
+    <h1 class="vv" id="vvv" style="color: darkturquoise;"> my heading number-1</h1>
+    <h1 class="v">my heading number-2</h1>
+    
+</body>
+</html>

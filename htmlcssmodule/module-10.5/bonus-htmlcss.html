@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .user{
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+            background-color: brown;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+        }
+        .user img{
+            height: 100px;
+            width: 300px;
+        }
+        .user2{
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+            background-color: brown;
+            display: table;
+            display: table-cell;
+            vertical-align: middle;
+            
+        }
+        .user2 img{
+            height: 100px;
+            width: 100px;
+        }
+        /* .usrs-container{
+            display: flex;
+            flex-wrap: wrap;
+        } */
+        .usrs-container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            align-items: center;
+
+            
+        }
+        .button{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="usrs-container">
+        <div id="user-1" class="user">
+            <h2>user_11</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="">button</a>
+            <img src="banner.png" alt="">
+        </div>
+        <div id="user-2" class="user2">
+            <img src="banner.png" alt="">
+            <h2>user_11</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="">button</a>
+            
+        </div>
+        <div id="user-3" class="user">
+            <h2>user_13</h2>
+        </div>
+        <div id="user-4" class="user">
+            <h2>user_14</h2>
+        </div>
+        <div id="user-5" class="user">
+            <h2>user_15</h2>
+        </div>
+        <div id="user-6" class="user">
+            <h2>user_16</h2>
+        </div>
+        <div id="user-7" class="user">
+            <h2>user_17</h2>
+        </div>
+        <div id="user-8" class="user">
+            <h2>user_18</h2>
+        </div>
+        <div id="user-9" class="user">
+            <h2>user_19</h2>
+        </div>
+        <div id="user-10" class="user">
+            <h2>user_110</h2>
+        </div>
+        
+    </div>
+    <span  class="button">
+        <a href="">button</a>
+    </span>
+</body>
+</html>
